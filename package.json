@@ -1,0 +1,31 @@
+{
+  "name": "gamecollectorapi",
+  "version": "0.0.1",
+  "private": true,
+  "description": "GameCollector Api REST v3",
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "main": "app.js",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "express": "^4.12.3",
+    "lodash": "^4.17.4",
+    "log": "^1.4.0",
+    "shortid": "^2.2.8",
+    "swagger-express-mw": "^0.1.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "istanbul": "^0.4.5",
+    "mocha": "3.5.1",
+    "should": "^7.1.0",
+    "sinon": "^4.1.3",
+    "supertest": "^3.0.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "swagger project test",
+    "cover": "istanbul cover node_modules/.bin/_mocha -- --recursive test/"
+  }
+}
