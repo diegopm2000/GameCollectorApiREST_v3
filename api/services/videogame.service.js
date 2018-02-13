@@ -33,9 +33,9 @@ function getVideoGameById(id) {
 function createVideoGame(params) {
 
   var result;
-  // Comprobamos si existe el gamesystem asociado
 
-  var gamesystemFound = gamesystemService.getGameSystemByName(params.name);
+  // Comprobamos si existe el gamesystem asociado
+  var gamesystemFound = gamesystemService.getGameSystemByName(params.gamesystem);
 
   if (!_.isUndefined(gamesystemFound)) {
 
