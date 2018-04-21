@@ -65,7 +65,7 @@ function updateVideoGame(params) {
 function deleteVideoGame(id) {
 
   var bDeleted = videogameRepository.deleteVideoGame(id);
-
+  
   if (bDeleted) {
     return true;
   } else {

@@ -122,7 +122,7 @@ function deleteVideoGame(req, res) {
     };
 
     // Call to service
-    var result = videogameService.deleteVideoGame(params);
+    var result = videogameService.deleteVideoGame(params.id);
 
     // Returning the result
     if (!_.isUndefined(result) && _.isUndefined(result.error)) {
